@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4x4 Matrix Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>4x4 Matrix Calculator</h1>
+
+      <!-- Navigation -->
+      <div class="nav">
+        <a href="2x2.html">2x2</a>
+        <a href="3x3.html">3x3</a>
+        <a href="4x4.html" class="active">4x4</a>
+      </div>
+
+      <input type="hidden" id="pageType" value="4x4" />
+
+      <!-- Matrices -->
+      <div class="matrices">
+        <!-- Matrix A -->
+        <div class="box">
+          <h2>Matrix A</h2>
+          <div class="grid-4x4">
+            <input type="number" id="matrix-1" value="1" />
+            <input type="number" id="matrix-2" value="2" />
+            <input type="number" id="matrix-3" value="3" />
+            <input type="number" id="matrix-4" value="4" />
+            <input type="number" id="matrix-5" value="5" />
+            <input type="number" id="matrix-6" value="6" />
+            <input type="number" id="matrix-7" value="7" />
+            <input type="number" id="matrix-8" value="8" />
+            <input type="number" id="matrix-9" value="9" />
+            <input type="number" id="matrix-10" value="10" />
+            <input type="number" id="matrix-11" value="11" />
+            <input type="number" id="matrix-12" value="12" />
+            <input type="number" id="matrix-13" value="13" />
+            <input type="number" id="matrix-14" value="14" />
+            <input type="number" id="matrix-15" value="15" />
+            <input type="number" id="matrix-16" value="16" />
+          </div>
+        </div>
+
+        <div class="symbol">+</div>
+
+        <!-- Matrix B -->
+        <div class="box">
+          <h2>Matrix B</h2>
+          <div class="grid-4x4">
+            <input type="number" id="matrix-17" value="16" />
+            <input type="number" id="matrix-18" value="15" />
+            <input type="number" id="matrix-19" value="14" />
+            <input type="number" id="matrix-20" value="13" />
+            <input type="number" id="matrix-21" value="12" />
+            <input type="number" id="matrix-22" value="11" />
+            <input type="number" id="matrix-23" value="10" />
+            <input type="number" id="matrix-24" value="9" />
+            <input type="number" id="matrix-25" value="8" />
+            <input type="number" id="matrix-26" value="7" />
+            <input type="number" id="matrix-27" value="6" />
+            <input type="number" id="matrix-28" value="5" />
+            <input type="number" id="matrix-29" value="4" />
+            <input type="number" id="matrix-30" value="3" />
+            <input type="number" id="matrix-31" value="2" />
+            <input type="number" id="matrix-32" value="1" />
+          </div>
+        </div>
+
+        <div class="equals">=</div>
+
+        <!-- Result -->
+        <div class="box result">
+          <h2>Result</h2>
+          <div class="grid-4x4">
+            <input type="text" id="matrix-33" readonly />
+            <input type="text" id="matrix-34" readonly />
+            <input type="text" id="matrix-35" readonly />
+            <input type="text" id="matrix-36" readonly />
+            <input type="text" id="matrix-37" readonly />
+            <input type="text" id="matrix-38" readonly />
+            <input type="text" id="matrix-39" readonly />
+            <input type="text" id="matrix-40" readonly />
+            <input type="text" id="matrix-41" readonly />
+            <input type="text" id="matrix-42" readonly />
+            <input type="text" id="matrix-43" readonly />
+            <input type="text" id="matrix-44" readonly />
+            <input type="text" id="matrix-45" readonly />
+            <input type="text" id="matrix-46" readonly />
+            <input type="text" id="matrix-47" readonly />
+            <input type="text" id="matrix-48" readonly />
+          </div>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="buttons">
+        <button onclick="add_matrix()">Add</button>
+        <button onclick="subtract_matrix()">Subtract</button>
+        <button onclick="multiply_matrix()">Multiply</button>
+        <button onclick="resetAll()">Reset</button>
+      </div>
+    </div>
+
+    <script src="4x4.js"></script>
+  </body>
+</html>
